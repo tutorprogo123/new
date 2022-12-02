@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o4xlcj(-8c@qp-b2debk1*f(om!6b^or+@@mw#u*2c02t^_c97
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["new-production-8d07.up.railway.app"]
+ALLOWED_HOSTS = ["localhost", "new-production-8d07.up.railway.app"]
 
 
 # Application definition
@@ -116,7 +116,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = '/static/'
 
 
@@ -127,4 +126,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # railway専用
-CSRF_TRUSTED_ORIGINS = ["https://new-production-8d07.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://new-production-8d07.up.railway.app",
+"http://new-production-8d07.up.railway.app"]
