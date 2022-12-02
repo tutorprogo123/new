@@ -39,4 +39,5 @@ trio-websocket==0.9.2
 types-cryptography==3.3.23
 urllib3==1.26.12
 virtualenv==20.16.3
+whitenoise==6.2.0
 wsproto==1.2.0
